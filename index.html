@@ -15,6 +15,7 @@ Made while referencing the online tutorial series of https://github.com/Ade-mir
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="vfx.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
@@ -49,10 +50,23 @@ Made while referencing the online tutorial series of https://github.com/Ade-mir
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="Justin Collier profile picture" />
       </div>
+      
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Justin Collier</h1>
-        <p class="section__text__p2">Data Scientist</p>
+
+        <div class="typewriter">
+            <p2>Data Scientist</p2>
+        </div>
+        
+
+        <h1>
+            <a id="aboutMeTypewriter" href="" class="typewrite" data-period="2000" data-type='[ "Data Analysis", "Machine Learning", "Language Modelling", "Data Visualization", "Database Architecture", "Web Deployment" ]'>
+              <span class="wrap"></span>
+            </a>
+        </h1>
+        <br/>
+
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -347,11 +361,14 @@ Made while referencing the online tutorial series of https://github.com/Ade-mir
         onclick="location.href='./#projects'"
       />
     </section>
+
     <section id="projects">
+
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -360,22 +377,32 @@ Made while referencing the online tutorial series of https://github.com/Ade-mir
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+
+            <br/>
+            <h2><span style="color: black; font-size: 21px;">Predictive Diagnosis System</span></h2>
+            <h3><span style="color: rgb(85, 85, 85); font-size: 12px;">Python, PostgreSQL, ASP.NET, FLask, GIT</span></h3>
+            <h3><span style="color: rgb(181, 181, 181); font-size: 12px;">Machine Learning & Data Science</span></h3>
+            
+            <br/>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/JustinCollierDev/TuberculosisDiagnosisML'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='#projects'"
+                
+                onmouseover="this.innerHTML = 'Coming Soon!'" 
+                onmouseout="this.innerHTML = 'Live Demo'"
               >
                 Live Demo
               </button>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
